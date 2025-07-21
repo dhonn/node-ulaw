@@ -1,0 +1,45 @@
+{
+  "name": "node-ulaw",
+  "version": "1.0.0",
+  "description": "Native G.711 µ-law decoder for Node.js. Optimized C++/NAPI binding for minimal overhead and maximum throughput.",
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "dependencies": {
+    "node-addon-api": "^6.1.0"
+  },
+  "gypfile": true,
+  "files": [
+    "build/Release/*.node",
+    "index.js",
+    "addon.cc",
+    "decode.c",
+    "encode.c",
+    "binding.gyp"
+  ],
+  "devDependencies": {
+    "node-gyp": "^11.2.0"
+  },
+  "keywords": ["g711","ulaw","mulaw","codec","native","node-addon"],
+  "author": "Dhonn Lushine <dhonn.lushine@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhonn/node-ulaw.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhonn/node-ulaw/issues"
+  },
+  "homepage": "https://github.com/dhonn/node-ulaw#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "node-addon-api": "^6.0.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^9.0.0"
+  }
+}
