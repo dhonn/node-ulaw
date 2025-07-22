@@ -4,8 +4,7 @@
       "target_name": "ulaw",
       "sources": [ "addon.cc", "decode.c", "encode.c" ],
       "include_dirs": [
-        "<!(node -p \"require('node-addon-api').include\")",
-        "node_modules/node-addon-api"
+        "<!@(node -p \"require('node-addon-api').include\")"
       ],
       "dependencies": [
         "<!(node -p \"require('node-addon-api').gyp\")"
