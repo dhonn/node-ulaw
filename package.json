@@ -1,6 +1,6 @@
 {
   "name": "node-ulaw",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Native G.711 µ-law decoder for Node.js. Optimized C++/N‑API binding for minimal overhead and maximum throughput.",
   "main": "index.js",
   "scripts": {
